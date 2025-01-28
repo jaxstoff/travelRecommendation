@@ -1,0 +1,140 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+
+    <style>
+        section {
+            margin-left: 5em;
+            margin-top: 10%;
+            width: 90%;
+            padding-left: 2em;
+
+        }
+
+        section h1 {
+            font-size: 5em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        section h2 {
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        p {
+            border-style: groove;
+            border-color: blueviolet;
+            border-width: 3px;
+            width: 100%;
+            padding: .5em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: .25fr 2fr 2fr;
+            grid-gap: 1px;
+        }
+
+        .filler {
+            height: 25em;
+            ;
+        }
+
+         #contactForm {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contactForm input,
+        #contactForm textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: .4em;
+            background-color: transparent;
+            color: black;
+            font-size: 16px;
+        }
+
+        #contactForm button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #contactfrmlabel {
+            font-size: 18px;
+        }
+        #contactForm button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2><img class="logo" src="./images/mountain_8005645.png">
+            Traveler Go Recommends</h2>
+        <ul id="navlinks">
+            <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+            <li><a href="./travel_about.html" id="about">About Us</a></li>
+            <li><a href="./travel_contact.html" id="contact">Contact Us </a></li>
+        </ul>
+        <div id="nosearchbox">
+            <!-- If we want a searchbox on this page - put it here -->
+        </div>
+    </nav>
+    <section>
+        <div class="grid-container">
+            <!-- social media icons Designed by Freepik-->
+            <div class="grid-child social">
+                <div class="filler">
+
+                </div>
+                <ul>
+                    <li><img title="FaceBook" class="smicons" src="./images/fb.png"></li>
+                    <li><img title="Instagram" class="smicons" src="./images/ig.png"></li>
+                    <li><img title="TikTok" class="smicons" src="./images/tt.png"></li>
+                    <li><img title="YouTube" class="smicons" src="./images/yt.png"></li>
+                </ul>
+            </div>
+            <div class="grid-child contacttitle">
+                <div class="contact">
+                    <h1>Contact Us</h1>
+
+                </div>
+                </div>
+                <div class="contact-form" class="grid-child">
+                    <form id="contactForm">
+                        <div>
+                            <label id="contactfrmlabel" for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label id="contactfrmlabel" for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label id="contactfrmlabel" for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" onclick="thankyou()">Submit</button>
+                    </form>
+                    <script>
+                        function thankyou() {
+                            alert('Thank you for contacting us!')
+                        }
+                    </script>
+               </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

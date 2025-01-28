@@ -1,0 +1,201 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+
+    <style>
+        section {
+            margin-left: 5em;
+            margin-top: 10%;
+            width: 90%;
+            padding-left: 2em;
+
+        }
+
+        section h1 {
+            font-size: 6em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        section h2 {
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        p {
+            border-style: groove;
+            border-color: blueviolet;
+            border-width: 3px;
+            width: 100%;
+            padding: .5em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: .25fr 3fr;
+            grid-gap: 1px;
+        }
+
+        .filler {
+            height: 25em;
+            ;
+        }
+
+        .aboutblurb {
+            border-style: solid;
+            border-width: 2px;
+            border-color: blueviolet;
+            width: 100%;
+            font-size: 1.5em;
+            color: black;
+            background-color: lightgrey;
+            opacity: 0.6;
+            padding: 1em;
+            margin: .5em;
+        }
+
+        .team {
+            border-style: solid;
+            border-width: 2px;
+            border-color: blueviolet;
+            width: 100%;
+            font-size: 1.5em;
+            color: black;
+            background-color: lightgrey;
+            opacity: 0.6;
+            padding: 1em;
+            margin: .5em;
+        }
+
+        .gridblurb {
+            float: left;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1px;
+        }
+
+        .emp-container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .pos {
+            background-color: blue;
+            font-size: 14px;
+            width: 35%;
+            color: white;
+            padding: 2px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .roledes {
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .employee {
+            padding-top: 1em;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2><img class="logo" src="./images/mountain_8005645.png">
+            Traveler Go Recommends</h2>
+        <ul id="navlinks">
+            <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+            <li><a href="./travel_about.html" id="about">About Us</a></li>
+            <li><a href="./travel_contact.html" id="contact">Contact Us </a></li>
+        </ul>
+        <div id="nosearchbox">
+            <!-- If we want a searchbox on this page - put it here -->
+        </div>
+    </nav>
+    <section>
+        <div class="grid-container">
+            <!-- social media icons Designed by Freepik-->
+            <div class="grid-child social">
+                <div class="filler">
+
+                </div>
+                <ul>
+                    <li><img title="FaceBook" class="smicons" src="./images/fb.png"></li>
+                    <li><img title="Instagram" class="smicons" src="./images/ig.png"></li>
+                    <li><img title="TikTok" class="smicons" src="./images/tt.png"></li>
+                    <li><img title="YouTube" class="smicons" src="./images/yt.png"></li>
+
+                </ul>
+            </div>
+            <div class="grid-child gridblurb">
+                <div class="about">
+                    <h1>About Us</h1>
+                    <p class="aboutblurb">
+                        <b>Traveler Go</b> is a traveler oriented company focused on taking our clients on
+                        adventures to civilizations hidden away in remote locations all over the world.
+                        From the mountains of Tibet to temples in the deepest Amazon rain forests. From
+                        exotic restaurants in the urban jungles of London and Moscow, to amusement parks
+                        deep in the Florida Everglades. We'll take you on <b>unique</b> trips that will amaze and
+                        enlighten.
+                    </p>
+                </div>
+                <div class="team" class="grid-child">
+                    <div class="team-container">
+                        <div id="teamtitle" class="grid-child">
+                            <h2>Our<br>Team</h2>
+                        </div>
+                        <div id="t1" class="grid-child">
+                            <div class="emp-container">
+                                <div class="grid-child employee">
+                                    Fred Go
+                                </div>
+                                <div class="grid-child roledes">
+                                    Fred is our Founder and CEO
+                                </div>
+                                <div class="grid-child position">
+                                    <div class="pos">CEO</div>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="t1" class="grid-child">
+                            <div class="emp-container">
+                                <div class="grid-child employee">
+                                    Betty Go
+                                </div>
+                                <div class="grid-child roledes">
+                                    Betty is our Head Adventure Guide
+                                </div>
+                                <div class="grid-child position">
+                                    <div class="pos">Guide</div>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="t1" class="grid-child">
+                            <div class="emp-container">
+                                <div class="grid-child employee">
+                                    Barney Fife
+                                </div>
+                                <div class="grid-child roledes">
+                                    Barney is our Adventure Coordinator.
+                                </div>
+                                <div class="grid-child position">
+                                    <div class="pos">Coordinator</div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    </section>
+</body>
+</html>

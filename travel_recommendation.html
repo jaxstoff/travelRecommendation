@@ -1,0 +1,105 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <title>
+        Traveler Go Recommends
+    </title>
+    <style>
+        section {
+            margin-left: 5em;
+            margin-top: 10%;
+            width:75%;
+            padding-left: 2em;
+        }
+        section h1 {
+            font-size:4em;
+            font-style: oblique;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+        }
+    
+        .blurb {
+             border-style: solid;
+             border-width: 2px;
+             border-color: blueviolet;
+            width: 100%;
+            font-size:1.5em;
+            color: black;
+            background-color: lightgrey;
+            opacity: 0.6;
+            padding: 1em;
+            margin:.5em;
+            
+
+        }
+       .homeblurb {
+        float: left;
+       }
+       .grid-container {
+        display: grid;
+        grid-template-columns: .25fr 2fr 2fr;
+        grid-gap: 1px;
+       }
+
+       .filler {
+        height: 25em;;
+       }
+</style>
+</head>
+<body>
+    <nav><h2><img class="logo" src="./images/mountain_8005645.png" >
+        Traveler Go Recommends</h2>
+        <ul id="navlinks">
+          <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+          <li><a href="./travel_about.html" id="about">About Us</a></li>
+          <li><a href="./travel_contact.html" id="contact">Contact Us </a></li>
+          </ul>
+          <div id="searchbox" class="searchbar">
+          <input type="text"  id="searchText" placeholder="Enter a destination or keyword">
+          <img class="searchicon" src="./images/search-icon-png-8.png" >
+          <button id='btnSearch' class="searchbtns" onclick="" >Search</button>
+          <button id='btnReset' class="searchbtns" onclick="resetSearch">Clear</button>
+          </div>
+        </ul>
+        </nav>
+<section>
+    <div class="grid-container">
+    <!-- social media icons Designed by Freepik-->
+     <div class="grid-child social">
+        <div class="filler">
+
+        </div>
+        <ul>
+            <li><img title="FaceBook" class="smicons" src="./images/fb.png"></li>
+            <li><img title="Instagram" class="smicons" src="./images/ig.png"></li>
+            <li><img title="TikTok" class="smicons" src="./images/tt.png"></li>
+            <li><img title="YouTube" class="smicons" src="./images/yt.png"></li>
+
+        </ul>
+     </div>
+     <div class="grid-child homeblurb">
+    <div>
+    <h1>Exotic<br>Adventures <br>Are<br> Go!</h1>
+    </div>
+<div class="blurb"><p>
+ 
+        <b>Traveler Go</b>, a traveler oriented company focused on taking our clients on 
+        adventures to Exotice Lacales. We'll take you on <b>unique</b> trips that will amaze 
+        and enlighten you. Join us on our next trip. Seats are available!
+      </p>
+
+ </div>
+
+
+<button class="bookbtn" disabled>Book Now!</button>
+</div>
+<div class="grid-child recommends">
+<div id="recommendations"></div>
+</div>
+</div>
+</section>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
