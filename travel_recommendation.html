@@ -8,9 +8,9 @@
     </title>
     <style>
         section {
-            margin-left: 5em;
-            margin-top: 10%;
-            width:75%;
+            margin-left: 4em;
+            margin-top: 5%;
+            width:90%;
             padding-left: 2em;
         }
         section h1 {
@@ -31,21 +31,63 @@
             opacity: 0.6;
             padding: 1em;
             margin:.5em;
-            
-
         }
        .homeblurb {
         float: left;
        }
        .grid-container {
         display: grid;
-        grid-template-columns: .25fr 2fr 2fr;
-        grid-gap: 1px;
+        grid-template-columns: .25fr 2fr 1fr;
+        grid-gap: 2px;
        }
 
        .filler {
         height: 25em;;
        }
+
+       .recommends {
+        padding-left: 1em;
+        padding-right: .5em;
+       }
+       .recomend {
+            border-style: solid;
+            border-width: 2px;
+            border-color: lightslategray;
+            background-color: lightgrey;
+            /*opacity: 0.6;*/
+            width: 100%;
+       }
+       .rec-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2px;
+       }
+
+       .recimg {
+        width: 640;
+        height: auto;
+       }
+       .recimg img {
+        max-height: auto;
+        max-width: 640px;
+        object-fit: cover;
+
+        width: 100%;
+        height: auto;
+       }
+       #showTime {
+        padding: .5em;
+       }
+       #visit {
+        padding: .5em;
+       }
+       #visit button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
 </style>
 </head>
 <body>

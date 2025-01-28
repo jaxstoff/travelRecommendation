@@ -82,9 +82,9 @@ nav {
     /* padding: 0; */
   }
 
-   .logo {
-    height: 10%;
-    width: 10%;
+   nav .logo {
+    height: 5%;
+    width: auto;
     border:0;
     vertical-align: middle;  
    }
